@@ -21,14 +21,12 @@ public class ModelT1000 implements Robot {
 		this.head = head;
 	}
 
-	@Override
 	public void action() {
 		head.calc();
 		hand.catchSomething();
 		leg.go();
 	}
 
-	@Override
 	public void dance() {
 		System.out.println("T1000 is dancing!");
 	}
