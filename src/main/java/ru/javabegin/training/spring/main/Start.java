@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ru.javabegin.training.spring.impls.philips.ModelT1000PhilipsImpl;
 import ru.javabegin.training.spring.impls.robot.ModelT1000;
+import ru.javabegin.training.spring.impls.samsung.SamsungRobot;
 
 public class Start {
 
@@ -20,5 +21,10 @@ public class Start {
         System.out.println();
         ModelT1000PhilipsImpl modelT1000PhilipsImpl = (ModelT1000PhilipsImpl) context.getBean("modelT1000PhilipsImpl");
         modelT1000PhilipsImpl.createPhilips();
+
+        System.out.println();
+        SamsungRobot samsungRobot = (SamsungRobot) context.getBean("samsungRobot");
+        samsungRobot.action();
+
     }
 }

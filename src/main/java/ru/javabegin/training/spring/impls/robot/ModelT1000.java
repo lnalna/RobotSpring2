@@ -8,7 +8,9 @@ import ru.javabegin.training.spring.interfaces.Robot;
 public class ModelT1000 implements Robot {
 
 	private Hand hand;
+
 	private Leg leg;
+
 	private Head head;
 
 	public ModelT1000() {
