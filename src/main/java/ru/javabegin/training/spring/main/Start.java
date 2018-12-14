@@ -26,5 +26,8 @@ public class Start {
         SamsungRobot samsungRobot = (SamsungRobot) context.getBean("samsungRobot");
         samsungRobot.action();
 
+        System.out.println();
+        ModelT1000 nokiaRobot = (ModelT1000) context.getBean("nokiaRobot");
+        nokiaRobot.action();
     }
 }

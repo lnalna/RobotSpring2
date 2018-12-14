@@ -46,4 +46,19 @@
 		<property name="leg" ref="samsungLeg"/>
 		<property name="head" ref="samsungHead"/>
 	</bean>
+
+	<!-- for Nokia configuration -->
+	<bean id="nokiaHand" class="ru.javabegin.training.spring.impls.nokia.NokiaHand"/>
+	<bean id="nokiaLeg" class="ru.javabegin.training.spring.impls.nokia.NokiaLeg"/>
+	<bean id="nokiaHead" class="ru.javabegin.training.spring.impls.nokia.NokiaHead"/>
+
+	<bean id="nokiaRobot" class="ru.javabegin.training.spring.impls.robot.ModelT1000">
+		<constructor-arg name="hand" ref="nokiaHand"/>
+		<constructor-arg name="leg" ref="nokiaLeg"/>
+		<constructor-arg name="head" ref="nokiaHead"/>
+		<constructor-arg name="color" value="Silver" type="java.lang.String"/>
+		<constructor-arg name="year" value="2018" type="int"/>
+		<constructor-arg name="isSoundEnabled" value="true" type="boolean"/>
+	</bean>
+
 </beans>
